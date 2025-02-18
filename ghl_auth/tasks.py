@@ -293,6 +293,7 @@ def fetch_opportunities_task(self, location_id=None):
 
 
 
+
 @shared_task(bind=True)
 def update_contact_opportunity_totals(self):
     try:

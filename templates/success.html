@@ -3,10 +3,8 @@
 {% block content %}
     <h1>Successfully Connected!</h1>
     <h2>{{ message }}</h2>
-    <p>GetLocations: <a href="{% url 'fetch_contacts' location_id %}">Fetch Nearby Contacts</a></p>
+    <p>Get Contacts and opportunities: <a href="{% url 'fetch_contacts' location_id %}">Fetch Nearby Contacts & opportunities</a></p>
     <p>Location ID: {{ location_id }}</p>
-
-    <p>Access token : {{ access_token }}</p>
 
     <a href="/" class="button">Back to home</a>
 {% endblock content %}
