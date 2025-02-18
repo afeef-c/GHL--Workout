@@ -1,0 +1,53 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django-specific ignores
+*.log
+*.pot
+*.pyc
+*.sqlite3
+*.mo
+
+# Ignore Django migrations
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Ignore environment variables
+.env
+
+# Ignore virtual environments
+venv/
+env/
+ENV/
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+
+# Ignore static files and media
+/static/
+/media/
+
+# Ignore local configuration files
+local_settings.py
+
+# Ignore coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore Celery beat scheduler files
+celerybeat-schedule

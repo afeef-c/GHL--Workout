@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="text-center mb-4">Enter Location ID</h2>
+    
+    <form action="{% url 'exchange_code_for_token' %}" method="POST">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label for="auth_code" class="form-label">Authorization Code</label>
+            <input type="text" class="form-control" name="auth_code" value="{{ auth_code }}" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label for="location_id" class="form-label">Location ID</label>
+            <input type="text" class="form-control" id="location_id" name="location_id" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+
+{% endblock content %}
+
