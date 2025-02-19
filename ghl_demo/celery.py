@@ -18,7 +18,7 @@ app.conf.beat_schedule = {
         "task": "ghl_auth.tasks.fetch_opportunities_task",
         "schedule": crontab(minute=0, hour='*/1'),
     },
-    "update-contact-opportunity-totals-every-hour": {  # Corrected key
+    "update-contact-opportunity-totals-every-hour": {  
         "task": "ghl_auth.tasks.update_contact_opportunity_totals",
         "schedule": crontab(minute=0, hour='*/1'),
     },
